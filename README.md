@@ -1,19 +1,35 @@
-# Financial Document Assistant
+# Financial Document Assistant (RAG-based)
 
-An LLM-powered financial document assistant that enables question answering over financial and regulatory documents using Retrieval-Augmented Generation (RAG).
+A Retrieval-Augmented Generation (RAG) application that enables question answering over financial and regulatory documents.  
+The system is designed with **enterprise banking constraints** in mind: explainability, data privacy, and deployment flexibility.
 
-## Key Features
-- PDF ingestion and chunking
-- Vector-based semantic search
-- Grounded Q&A using LLMs
-- Designed with enterprise and financial use-cases in mind
+---
 
-## Tech Stack
-- Python
-- LangChain
-- FAISS
-- OpenAI / Azure OpenAI (pluggable)
-- Streamlit
+## 🚀 What This Project Does
 
-## Project Status
-🚧 In progress — local RAG pipeline under active development.
+- Ingests financial and regulatory PDF documents
+- Splits documents into semantically meaningful chunks
+- Generates vector embeddings and stores them locally using FAISS
+- Retrieves relevant document chunks at query time
+- Uses a Large Language Model (LLM) to generate **grounded answers**
+- Displays source documents to support transparency and auditability
+
+---
+
+
+## 📌 Current Status
+
+✅ Local RAG pipeline implemented  
+✅ Open-source LLM integration via Ollama  
+🚧 Performance optimisation (GPU tuning, context limits)  
+🚧 Cloud backend support (AWS Bedrock, Azure OpenAI)
+
+---
+
+## 🔮 Planned Enhancements
+
+- AWS Bedrock integration
+- Azure OpenAI integration
+- Prompt engineering and guardrails
+- Responsible AI checks (bias, uncertainty disclaimers)
+- Improved latency and GPU utilisation
